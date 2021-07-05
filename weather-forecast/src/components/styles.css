@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
+:root{
+    --header-text-color: rgb(255, 255, 255);
+    --main-text-color: #3287f5;
+    --sub-text-color: black;
+    --title-text-color: rgb(194, 192, 192);   
+}
+
 .main{
-    margin: 10px;
+    width: 700px;
     border-radius: 20px;
-    background-color: #01579b;
+    background-color: #ffffff;
+    border-right: solid 2px #3c7ed4;
 }
 
 .top{
@@ -18,30 +26,26 @@
 }
 
 .header{
-    background-color: #424242;
-    color: whitesmoke;
-    margin: 10px 0px 0px 10px;
+    background-color: #3c7ed4;
+    color: var(--header-text-color);
+    margin: 10px 0px 10px 0px;
     font-size: 25px;
+    font-weight: bold;
     border-radius: 20px 20px 0 0;
     font-family: 'Recursive', sans-serif;
 }
 
-.button{
-    width: 35px;
-    height: 35px;
-}
-
 .day{
     padding: 15px;
-    color: whitesmoke;
+    color: var(--main-text-color);
     font-family: 'Recursive', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .temp{
     padding: 15px;
-    color: whitesmoke;
+    color: var(--sub-text-color);
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
 }
@@ -53,30 +57,20 @@
 
 .sunrise-sunset{
     padding: 15px;
-    color: whitesmoke;
+    color: var(--sub-text-color);
     font-family: 'Recursive', sans-serif;
     font-size: 16px;
 }
 
 .description{
     padding: 15px;
-    color: whitesmoke;
+    color: var(--main-text-color);
     font-family: 'Recursive', sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
-
-.forecast{
-    border-radius: 20px;
-    background-color: #01579b;
-    color: whitesmoke;
-    padding: 10px;
-    margin: 10px;
-    font-family: 'Recursive', sans-serif;
-    font-size: 19px;
-}
-
-.flex-forecast{
-    display: flex;
-    justify-content: space-between;
+.title{
+    color: var(--title-text-color);
+    font-size: 16px;
+    font-weight: 500;
 }
